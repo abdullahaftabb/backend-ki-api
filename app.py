@@ -1,3 +1,5 @@
+import utils.transport
+import utils.session
 from flask import Flask, request, jsonify, flash
 from flask_pymongo import PyMongo
 from werkzeug.security import generate_password_hash, check_password_hash
