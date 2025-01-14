@@ -148,7 +148,6 @@ def test_login(client, mongo_client):
     data = response.get_json()
     assert data['message'] == 'Email and password are required!'
     print('login failed with missing password')
-    
     print('Success test_login')
 
 def test_protected_route(client, mongo_client):
